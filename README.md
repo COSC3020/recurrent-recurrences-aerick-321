@@ -51,7 +51,7 @@ i = log13n
 ​
 T(1) = x, x is a constant
 
-$T(n) = 1 + (5(13^i -1))/12$
+$T(n) = n + (5(13^i -1))/12$
  which simplifies to O(n)
 
 3.
@@ -64,16 +64,16 @@ $$
 
 $T(n) = 13(13T (n/13) +2(n/13)) +2n$
 
-$T(n) = 169T(n/13) + $
+$T(n) = 169T(n/13) + 26(n/13) +2n$
 
-$T(n) = 169(13T(n/2197) +2n) +28n^2$
+$T(n) = 169(13T(n/2197) + 338(n/13) + 2n) +2n$
 
-$T(n) = 2197T(n/2197) +366n^3$
+$T(n) = 2197T(n/2197) +6n$
 
-$T(n) =13^i T(n/13^i)+ 5(13^{i-1}+ 13^{i-2}+ ..+13 +1)$
+$T(n) =13^i T(n/13^i)+ 2in
 
-$n/13^i$ = 1
+$n/13^i$ = 1, i = log13n
 
-i = log13n
+$T(n) = 13^{log13n}T(1) + 2n(log13n)$ --> T(n) = n + 2n(log13n)  which simplifies to O(nlog13n)
 
 “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
