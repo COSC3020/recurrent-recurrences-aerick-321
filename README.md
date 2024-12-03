@@ -51,7 +51,7 @@ i = log13n
 ​
 T(1) = x, x is a constant
 
-$T(n) =13^{log13n} * x + (5(13^i -1))/12$
+$T(n) = 1 + (5(13^i -1))/12$
  which simplifies to O(n)
 
 3.
